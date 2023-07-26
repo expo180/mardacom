@@ -17,7 +17,7 @@ Welcome to Mardacom, a personal project web application developed by a passionat
 
 - Frontend: HTML5, CSS3, JavaScript, Bootstrap.
 - Backend: SQLalchemy, PostgreSQL, ORM.
-- Machine Learning: (List the specific machine learning libraries or frameworks you are using).
+- Machine Learning: TensorFlow.
 
 
 ## Contribution Guidelines 🤝
