@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <meta name="author" content="">
+    <meta name="generator" content="">
+    <!--Favicon -->
+    <link rel="shortcut icon" href="url_for('static', filename='src/brand/iconified/favicon.ico')" type="image/x-icon" />
+    <link rel="icon" href="url_for('static', filename='src/brand/iconified/favicon.ico')" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="url_for('static', filename='src/brand/iconified/apple-touch-icon.png')" />
+    <link rel="apple-touch-icon" sizes="57x57" href="url_for('static', filename='src/brand/iconified/apple-touch-icon-57x57.png')" />
+    <link rel="apple-touch-icon" sizes="72x72" href="url_for('static', filename='src/brand/iconified/apple-touch-icon-72x72.png')" />
+    <link rel="apple-touch-icon" sizes="76x76" href="url_for('static', filename='src/brand/iconified/apple-touch-icon-76x76.png')"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="url_for('static', filename='src/brand/iconified/apple-touch-icon-114x114.png')" />
+    <link rel="apple-touch-icon" sizes="120x120" href="url_for('static', filename='src/brand/iconified/apple-touch-icon-120x120.png')" />
+    <link rel="apple-touch-icon" sizes="144x144" href="url_for('static', filename='src/brand/iconified/apple-touch-icon-144x144.png')" />
+    <link rel="apple-touch-icon" sizes="152x152" href="url_for('static', filename='src/brand/iconified/apple-touch-icon-152x152.png')" />
+    <link rel="apple-touch-icon" sizes="180x180" href="url_for('static', filename='src/brand/iconified/apple-touch-icon-180x180.png')" />
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+    <!--layout stylesheet-->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+
+    <!-- bootstrap-icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!--bootstrap javascript-->
+    <script type="text/javascript" src="{{url_for('static', filename='js/bootstrap.bundle.min.js')}}"></script>
+
+    <!--Jquery-->
+   <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.7.0.min.js.js')}}"></script>
+
+   <!--Javascript display elements functions-->
+   <script type="text/javascript" src="{{url_for('static', filename='js/display.js')}}"></script>
+
+   <!--Javascript display elements functions-->
+   <script type="text/javascript" src="{{url_for('static', filename='js/watch.js')}}"></script>   
+    
+   <title>mardacom</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <!--navbar-->
+                <div class="navbar">
+                    <a href="#" class="brand">
+                        <img src="{{url_for('static', filename='src/brand/logo.svg')}}" alt="mardacom" id="logo" srcset="">
+                    </a>
+                    <!--nav links-->
+                    <div class="menu">
+                        <ul>
+                            <a href="#Accuei" style="--i:2;">Accueil</a>
+                            <a href="#service" style="--i:3;">Services</a>
+                            <a href="#a propo" style="--i:4;">A propos</a>
+                            <a href="#blo" style="--i:6;">Blog</a>
+                            <a href="#fa" style="--i:5;">FAQ</a>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu">
+                        <button type="button" class="btn-close" aria-label="Close" id="back"></button>
+                        <div  class="items">
+                            <button class="mobile-gift">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <button class="position-relative mobile-gift">
+                                <i class="bi bi-gift"></i>
+                                <div class="position-absolute top-0 start-100 translate-middle p-2 bg-danger  rounded-circle">
+                                    <div class="visually-hidden">New alerts</div>
+                                </div>
+                            </button>
+                            <div class="dropdown dropdown-mobile">
+                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-translate"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Français</a></li>
+                                    <li><a class="dropdown-item" href="#">Anglais</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <a href="#Accuei" style="--i:2;">Accueil</a>
+                        <a href="#service" style="--i:3;">Services</a>
+                        <a href="#a propo" style="--i:4;">A propos</a>
+                        <a href="#blo" style="--i:6;">Blog</a>
+                        <a href="#fa" style="--i:5;">FAQ</a>
+                        <hr>
+                        <a href="test24.html"><i class="bi bi-person-circle"></i> Se connecter</a>
+                    </div>
+                    <!--hamburger menu-->
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="d-flex">
+                        <!--login button-->
+                        <div>
+                            <div class="dropdown dropdown-desktop">
+                                <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="bi bi-translate"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Français</a></li>
+                                    <li><a class="dropdown-item" href="#">Anglais</a></li>
+                                </ul>
+                            </div>
+                            <button class="desktop-gift">
+                                <i class="bi bi-search"></i>
+                            </button>
+                            <button type="button" class="btn position-relative desktop-gift">
+                                <i class="bi bi-gift"></i>
+                                <div class="position-absolute top-0 start-100 translate-middle p-2 bg-danger rounded-circle">
+                                    <div class="visually-hidden">New alerts</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div>
+                            <a href="test24.html" style="--i:2;" class="cta" id="login">
+                                <i class="bi bi-person"></i> 
+                                Se connecter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end navbar-->    
+            </nav>
+        </header>
+        <!--hero section-->
+        <section class="hero-section" id="Accueil">
+            <h1 class="display-4 fw-bold">Découvrez de <br>nouveaux horizons <strong class="text-primary">.</strong></h1>
+            <hr class="col-md-4">
+            <p class="lead col-md-6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div>
+                <a href="" class="btn btn-primary col-xs-1" class="last-of-type">
+                    En savoir plus 
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+        <!--end hero section-->
+        <!--services section-->
+        <section class="services" id="services">
+            <!--services description-->
+            <div class="services-description">
+                <h2 class="display-4 fw-bold">Nos services <strong class="text-primary">.</strong></h2>
+                <hr>
+            </div>
+            <!-- end services description-->
+            <!--service components-->
+            <div class="service-components">
+                <div class="service-component-line">
+                    <div class="service-components-item">
+                        <i class="bi bi-buildings-fill"></i>
+                        <h3>lorem isum</h3>
+                        <p class="text-lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </p>
+                    </div>
+                    <div class="service-components-item">
+                        <i class="bi bi-buildings-fill"></i>
+                        <h3>lorem isum</h3>
+                        <p class="text-lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </p>
+                    </div>
+                    <div class="service-components-item">
+                        <i class="bi bi-buildings-fill"></i>
+                        <h3>lorem isum</h3>
+                        <p class="text-lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </p>
+                    </div>
+                </div>
+                <div class="service-component-line">
+                    <div class="service-components-item">
+                        <i class="bi bi-buildings-fill"></i>
+                        <h3>lorem isum</h3>
+                        <p class="text-lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </p>
+                    </div>
+                    <div class="service-components-item">
+                        <i class="bi bi-buildings-fill"></i>
+                        <h3>lorem isum</h3>
+                        <p class="text-lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </p>
+                    </div>
+                    <div class="service-components-item">
+                        <i class="bi bi-buildings-fill"></i>
+                        <h3>lorem isum</h3>
+                        <p class="text-lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- end service components-->
+        </section>
+        <!-- end services section-->
+        <!-- pricing -->
+        <section class="pricing">
+            <!--adding pricing info here-->
+        </section>
+        <!-- end pricing -->
+        <!--about section-->
+        <!--case study section-->
+        <section class="case-study">
+            <!--case study info-->
+        </section>
+        <!--case study section-->
+        <section class="about" id="a propos">
+            <div class="about-paragraph">
+                <h1 class="display-4 fw-bold">A propos <strong class="text-primary">.</strong></h1>
+                <hr class="col-md-8">
+                <p class="lead col-md-10">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div><img src="{{url_for('static', filename='src/main/about.jpg')}}" alt="A propos" loading="lazy" class="about-img" srcset=""></div>
+        </section>
+        <!--end about section-->
+        <!--blog section-->
+        <section class="blog" id="blog">
+            <div class="blog-description">
+                <h1 class="display-4 fw-bold">Articles <strong class="text-primary">.</strong></h1>
+                <hr class="col-md-8">   
+            </div>
+            <div class="articles">
+                <div class="article-item">
+                    <img src="{{url_for('static', filename='src/main/adeolu-eletu-E7RLgUjjazc-unsplash.jpg')}}" class="articles-img" loading="lazy" alt="" srcset="">
+                    <div>
+                        <h3>lorem ipsum</h3>
+                        <hr class="col-md-12">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </p>
+                        <a href="" class="btn btn-outline-primary view-more">Voir plus</a>
+                    </div>
+                </div>
+                <div href="#" class="article-item">
+                    <img src="{{url_for('static', filename='src/main/christina-wocintechchat-com-rg1y72eKw6o-unsplash.jpg')}}" class="articles-img" loading="lazy" alt="" srcset="">
+                    <div>
+                        <h3>lorem ipsum</h3>
+                        <hr class="col-md-12">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </p>
+                        <a href="" class="btn btn-outline-primary view-more">Voir plus</a>
+                    </div>
+                </div>
+                <div href="#" class="article-item">
+                    <img src="{{url_for('static', filename='src/main/matthew-henry-VviFtDJakYk-unsplash.jpg')}}" class="articles-img" loading="lazy" alt="" srcset="">
+                    <div>
+                        <h3>lorem ipsum</h3>
+                        <hr class="col-md-12">
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        </p>
+                        <a href="" class="btn btn-outline-primary view-more">Voir plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end blog section-->
+        <!--horloge section-->
+        <hr class="col-md-8 hr-li">
+        <section class="horloge">
+            <div class="container col-xxl-8 px-4 py-5">
+                <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                    <div class="col-10 col-sm-8 col-lg-6">
+                        <img src="{{url_for('static', filename='src/patterns/Linth.png')}}" class="d-block mx-lg-auto img-fluid" alt="" width="700" height="500" loading="lazy">
+                    </div>
+                    <div class="col-lg-6">
+                        <h1 class="display-5 fw-bold lh-1 mb-3 watch">
+                            <div id="hour"></div>:
+                            <div id="min"></div>:
+                            <div id="sec"></div>
+                            <div id="PM"></div>
+                        </h1>
+                        <hr class="hr-sec-li">
+                        <p class="lead">
+                            Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+                        </p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--end horloge section-->
+        <!--quote section-->
+        <section class="quote">
+            <h2 class="display-5 fw-bold">Besoin d'un <br class="new-line">service <strong class="text-primary">?</strong></h2>
+            <hr class="help">
+            <p class="lead">
+                Avez-vous besoin d'aide pour vos démarches Marketing? n'hésitez pas à nous contacter!
+            </p>
+            <hr class="help">
+            <form action="" method="" class="help-form">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Adresse e-mail</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nom@example.com" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Entrer votre requête ici" required="required"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-primary">Envoyer <i class="bi bi-send"></i></button>
+                </div>
+            </form>
+        </section>
+        <!--end quote section-->
+        <!--footer section-->
+        <div class="container footer">
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Services</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Acceuil</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Tarifs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Services</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">A propos</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Blog</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Articles</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Cours</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                    <h5>Souscrivez à notre Newsletter</h5>
+                    <p>Recevez des offres et informations intéressantes tous les mois</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Adresse e-mail</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="nom@example.com">
+                        <button class="btn btn-primary" type="button">Souscrire</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+            <p>&copy; 2023 mardacom. Tous droits réservés.</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-twitter"></i></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+        </div>
+  </footer>
+</div>
+<!-- end footer section-->
+</main>
+</body>
+</html>
